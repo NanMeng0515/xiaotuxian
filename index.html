@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="小兔鲜儿官网，致力于打造全球最大的食品、生鲜电商购物平台">
+    <meta name="keywords" content="小兔鲜儿,食品,生鲜,服装,家电,电商,购物">
+    <title>小兔鲜儿-新鲜、惠民、快捷！</title>
+    <link rel="shortcut icon" href="favicon.ico" type="imge/x-icom">
+    <link rel="stylesheet" href="./css/dase.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+</head>
+
+<body>
+    <!-- 快捷导航 -->
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li><a href="./index-登录.html" target="_self">请先登录</a></li>
+                <li><a href="./index-注册.html" target="_self">免费注册</a></li>
+                <li><a href="./index-个人中心.html" target="_self">我的订单</a></li>
+                <li><a href="./index-个人中心.html" target="_self">会员中心</a></li>
+                <li><a href="./index-个人中心.html" target="_self">帮助中心</a></li>
+                <li><a href="./index-个人中心.html" target="_self">在线客服</a></li>
+                <li><a href="./index-个人中心.html" target="_self">手机版</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="backgro">
+        <div class="header wrapper">
+            <div class="logo">
+                <h1><a href="#">小兔鲜儿</a></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">生鲜</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">餐厨</a></li>
+                    <li><a href="#">电器</a></li>
+                    <li><a href="#">居家</a></li>
+                    <li><a href="#">洗护</a></li>
+                    <li><a href="#">孕婴</a></li>
+                    <li><a href="#">服装</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="搜一搜">
+                <!-- 定位 放大镜 -->
+                <span></span>
+            </div>
+            <a href="./index-个人中心.html" target="_self">
+                <div class="car">
+                    <span>2</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="banner">
+        <div class="wrapper">
+            <!-- 使用Swiper的轮播组件 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./uploads/banner_1.png"></div>
+                    <div class="swiper-slide"><img src="./uploads/b2.jpg"></div>
+                    <div class="swiper-slide"><img src="./uploads/b3.jpg"></div>
+                    <div class="swiper-slide"><img src="./uploads/b4.jpg"></div>
+                    <div class="swiper-slide"><img src="./uploads/b5.jpg"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- 侧导航 -->
+            <div class="aside">
+                <ul>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                </ul>
+            </div>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    autoplay: true,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
+    </div>
+
+    <!-- 新鲜好物 -->
+    <div class="backgro2">
+        <div class="goods wrapper">
+            <!-- hd header 头部 -->
+            <div class="hd">
+                <h2>新鲜好物<span>新鲜出炉 品质靠谱</span></h2>
+                <a href="#">查看全部</a>
+            </div>
+            <!-- body 身体, 内容 -->
+            <div class="bd clearfix">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./uploads/new_goods_1.jpg" alt="">
+                            <h3>睿米无线吸尘器F8</h3>
+                            <div>￥<span>899</span></div>
+                            <b>新品</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./uploads/new_goods_2.jpg" alt="">
+                            <h3>智能环绕3D空调</h3>
+                            <div>￥<span>3299</span></div>
+                            <b>新品</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./uploads/new_goods_3.jpg" alt="">
+                            <h3>广东软糯米煲仔饭</h3>
+                            <div>￥<span>28</span></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./uploads/new_goods_4.jpg" alt="">
+                            <h3>罗西机械智能手表</h3>
+                            <div>￥<span>4299</span></div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 新鲜好物 -->
+    <div class="backgro2">
+        <div class="goods wrapper">
+            <!-- hd header 头部 -->
+            <div class="hd">
+                <h2>新鲜好物<span>新鲜出炉 品质靠谱</span></h2>
+                <a href="#">查看全部</a>
+            </div>
+            <!-- body 身体, 内容 -->
+            <div class="bd clearfix bd2">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./uploads/new_goods_1.jpg" alt="">
+                            <h3>特惠推荐</h3>
+                            <!-- <div>￥<span>899</span></div> -->
+                            <h4>我猜到你的需要</h4>
+                        </a>
+                        <!-- 轮播图 -->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./uploads/new_goods_2.jpg" alt="">
+                            <h3>爆款推荐</h3>
+                            <!-- <div>￥<span>3299</span></div> -->
+                            <h4>人气好物推荐</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./uploads/new_goods_3.jpg" alt="">
+                            <h3>领卷中心</h3>
+                            <!-- <div>￥<span>28</span></div> -->
+                            <h4>发现更多超值优惠卷</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./uploads/new_goods_4.jpg" alt="">
+                            <h3>场景使用一键买全</h3>
+                            <!-- <div>￥<span>4299</span></div> -->
+                            <h4>编辑精心整理推荐</h4>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 衣物 -->
+
+    <div class="backgro2">
+        <div class="shengxian wrapper">
+            <div class="hd">
+                <h2>服装</h2>
+                <a href="#" class="more">查看全部</a>
+                <ul>
+                    <li><a href="#">裙子</a></li>
+                    <li><a href="#">裤子</a></li>
+                    <li><a href="#">上衣</a></li>
+                    <li><a href="#">内衣</a></li>
+                    <li><a href="#">西装</a></li>
+                    <li><a href="#">衬衫</a></li>
+                    <li><a href="#">外套</a></li>
+                </ul>
+            </div>
+            <div class="bd clearfix">
+                <div class="left">
+                    <a href="#"><img src="./uploads/clothes_goods_cover.jpg" alt=""></a>
+                    <div class="Floating">
+                        <span>靓丽</span>
+                        <span>时尚百搭</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_1.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>足力健老年帆布鞋</p>
+                                    <p>￥129</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_2.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>时尚真牛皮表带</p>
+                                    <p>￥49.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_3.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <P>女士真牛皮包包</P>
+                                    <P>￥1999</P>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_4.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>超超超好看的淡绿色裙子</p>
+                                    <p>￥299</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_5.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>超有男人味的男士T恤衫</p>
+                                    <p>￥99.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_6.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>年轻人的运动鞋</p>
+                                    <p>￥269.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_7.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>时尚老爹鞋子</p>
+                                    <p>￥139.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_8.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>一个超有男人味的运动背心</p>
+                                    <p>￥69.9</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 家具 -->
+    <div class="backgro2">
+        <div class="shengxian wrapper">
+            <div class="hd">
+                <h2>家具</h2>
+                <a href="#" class="more">查看全部</a>
+                <ul>
+                    <li><a href="#">懒人沙发</a></li>
+                    <li><a href="#">冰箱</a></li>
+                    <li><a href="#">微波炉</a></li>
+                    <li><a href="#">桌子</a></li>
+                    <li><a href="#">凳子</a></li>
+                    <li><a href="#">衣柜</a></li>
+                    <li><a href="#">电磁炉</a></li>
+                </ul>
+            </div>
+            <div class="bd clearfix">
+                <div class="left">
+                    <a href="#"><img src="./uploads/kitchen_goods_cover.jpg" alt=""></a>
+                    <div class="Floating">
+                        <span>家具</span>
+                        <span>智能生活</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_1.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>足力健老年帆布鞋</p>
+                                    <p>￥129</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_2.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>时尚真牛皮表带</p>
+                                    <p>￥49.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_3.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <P>女士真牛皮包包</P>
+                                    <P>￥1999</P>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_4.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>超超超好看的淡绿色裙子</p>
+                                    <p>￥299</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_5.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>超有男人味的男士T恤衫</p>
+                                    <p>￥99.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_6.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>年轻人的运动鞋</p>
+                                    <p>￥269.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_7.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>时尚老爹鞋子</p>
+                                    <p>￥139.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_8.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>一个超有男人味的运动背心</p>
+                                    <p>￥69.9</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 生鲜 -->
+    <div class="backgro2">
+        <div class="shengxian wrapper">
+            <div class="hd">
+                <h2>服装</h2>
+                <a href="#" class="more">查看全部</a>
+                <ul>
+                    <li><a href="#">裙子</a></li>
+                    <li><a href="#">裤子</a></li>
+                    <li><a href="#">上衣</a></li>
+                    <li><a href="#">内衣</a></li>
+                    <li><a href="#">西装</a></li>
+                    <li><a href="#">衬衫</a></li>
+                    <li><a href="#">外套</a></li>
+                </ul>
+            </div>
+            <div class="bd clearfix">
+                <div class="left">
+                    <a href="#"><img src="./uploads/clothes_goods_cover.jpg" alt=""></a>
+                    <div class="Floating">
+                        <span>靓丽</span>
+                        <span>时尚百搭</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_1.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>足力健老年帆布鞋</p>
+                                    <p>￥129</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_2.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>时尚真牛皮表带</p>
+                                    <p>￥49.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_3.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <P>女士真牛皮包包</P>
+                                    <P>￥1999</P>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_4.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>超超超好看的淡绿色裙子</p>
+                                    <p>￥299</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_5.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>超有男人味的男士T恤衫</p>
+                                    <p>￥99.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_6.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>年轻人的运动鞋</p>
+                                    <p>￥269.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_7.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>时尚老爹鞋子</p>
+                                    <p>￥139.9</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="right-top"><img src="./uploads/clothes_goods_8.jpg" alt=""></div>
+
+                                <div class="right-bottom">
+                                    <p>一个超有男人味的运动背心</p>
+                                    <p>￥69.9</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 联系方式 -->
+    <div class="contact">
+        <div class="a4">
+            <div class="customer">
+                <ul>
+                    <li>客户服务</li>
+                    <li><span></span>在线客服</li>
+                    <li><span></span>问题反馈</li>
+                </ul>
+            </div>
+            <div class="concern">
+                <ul>
+                    <li>关注我们</li>
+                    <li><span></span>公众号</li>
+                    <li><span></span>微博</li>
+                </ul>
+            </div>
+            <div class="Download">
+                <ul>
+                    <li>下载App</li>
+                    <li><img src="./uploads/微信图片_20220328221631.jpg" alt="" class="b2"></li>
+                    <li>扫描二维<br>码立即下载App<a href="#"><b>下载页面</b></a><a href="#" class="b1"><b>左边作者微信</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="serve">
+                <ul>
+                    <li>服务热线</li>
+                    <li>400-0000-000<br>周一至周日8:00-18:00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 版权区域 -->
+    <div class="footer">
+
+        <div class="wrapper">
+            <div class="top">
+                <ul>
+                    <li>
+                        <!-- 通过伪元素添加标签实现精灵图 -->
+                        <span>价格亲民</span>
+                    </li>
+                    <li>
+                        <span>物流快捷</span>
+                    </li>
+                    <li>
+                        <span>品质新鲜</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <a href="#">关于我们</a> |
+                    <a href="#">帮助中心</a> |
+                    <a href="#">售后服务</a> |
+                    <a href="#">配送与验收</a> |
+                    <a href="#">商务合作</a> |
+                    <a href="#">搜索推荐</a> |
+                    <a href="#">友情链接</a>
+                </p>
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+    </div>
+    <!-- 嘿嘿 -->
+    <script type="text/javascript">
+        $(function () {
+            $(".b2").mouseenter(function () {
+                $(".b1").stop().fadeTo(0, 1);
+            })
+            $(".b2").mouseleave(function () {
+                $(".b1").stop().fadeTo(0, 0);
+            })
+
+        })
+    </script>
+</body>
+
+</html>

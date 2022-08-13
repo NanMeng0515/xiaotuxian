@@ -1,0 +1,913 @@
+/* 放index页面的样式表 */
+
+
+/* banner */
+
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+    background-color: pink;
+}
+
+
+/* 侧导航 */
+
+.banner .aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.banner .aside li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .aside a {
+    position: relative;
+    /* 宽度和父级一样 */
+    padding-left: 36px;
+    padding-right: 19px;
+    display: block;
+    height: 50px;
+    color: #fff;
+}
+
+.banner .aside a span {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.banner .aside a:hover {
+    background-color: #27ba9b;
+}
+
+
+/* a的里面最后的位置添加箭头 */
+
+.banner .aside a::after {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+
+
+/* 箭头 */
+
+.next,
+.prev {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url(../images/sprites.png);
+    border-radius: 50%;
+}
+
+
+/* 背景图位置负责2件事: 改变箭头在盒子里面的位置; 改变精灵图的位置 */
+
+
+/* 导致在精灵图中测量的尺寸不准确 */
+
+
+/* 解决方案有2种: 
+    1. 书写背景图位置属性, 借助谷歌的调试工具调试具体的位置数值
+    2. 书写标签的时候, a负责盒子,里面再添加一个span负责箭头
+*/
+
+.prev {
+    left: 260px;
+    background-position: 14px -60px;
+}
+
+.next {
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+
+/* 圆点 */
+
+.banner ol {
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+    height: 10px;
+}
+
+.banner ol li {
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner ol .current {
+    background-color: #fff;
+}
+
+
+/* 新鲜好物 */
+
+.goods {
+    background: #fff;
+}
+
+.goods .hd {
+    height: 114px;
+    line-height: 114px;
+}
+
+.goods .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 114px;
+}
+
+.goods .hd h2 span {
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods .hd a,
+.shengxian .hd .more {
+    float: right;
+    color: #999;
+}
+
+.goods .hd a::after,
+.shengxian .hd .more::after {
+    content: '';
+    display: inline-block;
+    margin-left: 13px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+
+.goods .bd li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+
+.goods .bd2 li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+body .a2:nth-child(2) {
+    background: #27ba9b;
+}
+
+.goods .bd li:last-child {
+    margin-right: 0;
+}
+
+.goods .bd li img {
+    width: 304px;
+}
+
+.goods .bd li h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.goods .bd li h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-top: 0;
+}
+
+.goods .bd li div {
+    color: #9a2e1f;
+    font-size: 17px;
+}
+
+.goods .bd li div span {
+    font-size: 23px;
+}
+
+.goods .bd li b {
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* 生鲜 */
+
+.shengxian .hd {
+    height: 96px;
+    line-height: 96px;
+}
+
+.shengxian .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.shengxian .hd .more {
+    float: right;
+}
+
+.shengxian .hd ul {
+    float: right;
+    margin-right: 65px;
+}
+
+.shengxian .hd ul li {
+    float: left;
+}
+
+.shengxian .hd li a {
+    padding: 2px 7px;
+    margin-left: 6px;
+}
+
+.shengxian .hd li a:hover {
+    background-color: #27ba9b;
+    color: #fff;
+}
+
+.shengxian .bd .left {
+    float: left;
+    width: 240px;
+    height: 610px;
+    background-color: pink;
+}
+
+.shengxian .bd .left img {
+    width: 240px;
+    height: 610px;
+}
+
+.shengxian .bd .right {
+    float: left;
+    width: 1000px;
+    height: 610px;
+    /* background-color: skyblue; */
+}
+
+.Floating span {
+    width: 76px;
+    height: 66px;
+    position: relative;
+    top: -260px;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 66px;
+}
+
+.Floating span:nth-child(2) {
+    width: 100px;
+    z-index: 11;
+    margin-left: -5px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.right li {
+    width: 250px;
+    height: 305px;
+    float: left;
+}
+
+.right img {
+    width: 160px;
+    height: 160px;
+}
+
+.right-top {
+    width: 160px;
+    height: 160px;
+    margin: 0px auto;
+}
+
+.right-bottom {
+    width: 250px;
+    height: 145px;
+    padding: 10px 22px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.right-bottom p:nth-child(2) {
+    width: 0px;
+    height: 0px;
+    font-size: 22px;
+    color: #cf4444;
+    position: relative;
+    left: 25px;
+    bottom: -70px;
+}
+
+
+/* 注册页面样式 */
+
+.enroll {
+    width: 1240px;
+    height: 800px;
+    background: #fff;
+    margin: 25px auto;
+}
+
+.enroll h3 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #999;
+    padding-left: 50px;
+    height: 180px;
+    line-height: 180px;
+}
+
+.enroll form {
+    margin-left: 460px;
+}
+
+.enroll div {
+    width: 780px;
+    /* padding-bottom: 24px; */
+}
+
+.enroll .icon-input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #e4e4e4;
+    padding-left: 40px;
+    font-size: 100%;
+    opacity: 0.5;
+}
+
+.enroll .icon-input:hover {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #27ba9b;
+    padding-left: 40px;
+}
+
+.Confirm {
+    width: 300px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+}
+
+.Confirm:hover {
+    width: 300px;
+    height: 50px;
+    background: #27ba9b;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+}
+
+.enroll span a {
+    position: relative;
+    left: -100px;
+    top: 2px;
+    color: #27ba9b;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    display: list-item;
+    list-style: none;
+    position: relative;
+}
+
+.icon img {
+    width: 25px;
+    height: 25px;
+    margin-top: 35px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 5;
+}
+
+.enroll div:nth-child(6) {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+
+.enroll div:nth-child(6) span {
+    color: #27ba9b;
+}
+
+.enroll div:nth-child(6) input {
+    margin-right: 10px;
+}
+
+
+/* 注册页面样式 */
+
+.window {
+    width: 400px;
+    height: 380px;
+    background: #fff;
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    margin: -150px 0 0 -200px;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+}
+
+.window-header {
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.window p {
+    width: 100px;
+    height: 14px;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #27ba9b;
+}
+
+.window-header h3 {
+    width: 50%;
+    margin: 15px auto 0;
+    font-size: 20px;
+    font-weight: 400;
+    float: left;
+}
+
+.window-header h3:hover {
+    border-bottom: 1px solid #27ba9b;
+}
+
+.window-body {
+    width: 100%;
+    height: 315px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    opacity: 1;
+}
+
+.window-body .icon-input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #e4e4e4;
+    padding-left: 40px;
+    font-size: 100%;
+    opacity: 0.5;
+}
+
+.window-body img {
+    width: 25px;
+    height: 25px;
+    margin-top: 35px;
+    margin-left: 45px;
+    position: absolute;
+    z-index: 2;
+}
+
+#icon-img1 {
+    margin-top: 45px;
+}
+
+.window-body div:nth-child(3) {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.window-body div:nth-child(3) span {
+    color: #27ba9b;
+}
+
+.window-body div:nth-child(3) input {
+    margin-right: 5px;
+}
+
+.window-body div:nth-child(4) input {
+    padding: 0;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.window-body div:nth-child(4) input:hover {
+    background: #27ba9b;
+    color: #fff;
+}
+
+.service {
+    float: left;
+    margin-left: 55px;
+    font-size: 14px;
+}
+
+.service:last-child {
+    float: right;
+    margin-right: 55px;
+}
+
+.service:hover {
+    color: #27ba9b;
+}
+
+.QR {
+    width: 100%;
+    height: 315px;
+    position: absolute;
+    top: 65px;
+    z-index: 3;
+    text-align: center;
+    background: #fff;
+    /* 完全隐藏 */
+    display: none;
+}
+
+.QR img {
+    width: 200px;
+    height: 200px;
+    margin: 25px auto 0px;
+}
+
+.QR span {
+    width: 400px;
+    height: 50px;
+    display: block;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+
+/* 个人信息页面样式 */
+
+
+/* 个人列表样式 */
+
+.subject-personal {
+    width: 100%;
+    height: 1400px;
+}
+
+.Personal-list {
+    width: 224px;
+    height: 1120px;
+    background: #fff;
+    text-align: center;
+    margin: 20px 0px 0px 70px;
+    padding-top: 1px;
+    float: left;
+    border-radius: 5px;
+}
+
+.Personal-list h5 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.Personal-list ul:nth-child(-n+6) {
+    border-bottom: 1px solid rgba(227, 227, 227, 0.5);
+    padding-bottom: 20px;
+}
+
+.Personal-list li {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Personal-list li:hover {
+    color: #27ba9b;
+}
+
+
+/* 个人信息样式 */
+
+.personal-info {
+    width: 1000px;
+    height: 1400px;
+    /* background: #27ba9b; */
+    float: left;
+    margin-left: 20px;
+}
+
+.personal-info>div {
+    margin-top: 20px;
+}
+
+
+/* 我的设置样式 */
+
+.My-settings {
+    width: 1000px;
+    height: 132px;
+    background-image: url(../uploads/微信图片_20220409163018.jpg);
+    border-radius: 5px;
+}
+
+.My-settings .photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    float: left;
+    margin-top: 22px;
+    margin-left: 55px;
+}
+
+.My-settings .photo img {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+}
+
+.User-name {
+    width: 200px;
+    height: 75px;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 200;
+    float: left;
+    margin-left: 20px;
+    margin-top: 26px;
+    color: #fff;
+}
+
+.Personal-icon {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-right: 100px;
+    float: right;
+}
+
+.Personal-icon img {
+    width: 32px;
+    height: 29px;
+    margin-left: 30px;
+}
+
+.My-settings div:nth-child(3) img {
+    width: 22px;
+    height: 32px;
+    margin-left: 35px;
+}
+
+.Personal-icon span {
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+/* 我的订单样式 */
+
+.My-order {
+    width: 1000px;
+    height: 375px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.My-order>div {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.My-order-title h3 {
+    margin-left: 30px;
+    float: left;
+}
+
+.My-order-title p {
+    margin-right: 30px;
+    float: right;
+}
+
+.My-order-title span {
+    width: 6px;
+    height: 12px;
+    display: block;
+    margin-right: 0px;
+    background-image: url(../img/sprites.png);
+    background-position: -0px -110px;
+    float: right;
+    margin-top: 23.5px;
+    margin-left: 10px;
+}
+
+.My-order-ul {
+    text-align: center;
+    margin-top: 20px;
+    float: left;
+}
+
+.My-order-ul img {
+    width: 107px;
+    height: 107px;
+    float: left;
+    margin-left: 20px;
+}
+
+.My-order-ul p {
+    margin-top: 30px;
+}
+
+.My-order-ul li {
+    width: 200px;
+    height: 137px;
+    float: left;
+}
+
+.My-order-ul li:nth-child(1) {
+    width: 400px;
+    height: 137px;
+}
+
+.My-order-ul li:nth-child(1) span {
+    color: rgba(167, 167, 167, 0.9);
+    font-size: 15px;
+}
+
+.My-order-ul li:nth-child(2) p {
+    color: coral;
+    margin-top: 0px;
+    margin-top: 40px;
+}
+
+.My-order-ul li:nth-child(2) span {
+    color: rgba(167, 167, 167, 0.9);
+    font-size: 14px;
+}
+
+.My-order-ul li:nth-child(3) p {
+    font-size: 18px;
+    color: brown;
+}
+
+.My-order-ul li:nth-child(3) span {
+    font-size: 12px;
+    color: rgb(42, 42, 42);
+}
+
+.My-order-ul li:nth-child(4) p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+}
+
+.My-order-ul li:nth-child(4) span {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px auto 0px;
+    line-height: 30px;
+    font-weight: 350;
+    display: block;
+    background: #b6b6b6;
+    color: #fff;
+}
+
+.My-order-ul li:nth-child(4) p:hover {
+    color: #27ba9b;
+}
+
+.My-order-ul li:nth-child(4) span:hover {
+    background: #27ba9b;
+}
+
+
+/* 我的收藏与我的足迹样式 */
+
+.My-collect {
+    width: 1000px;
+    height: 410px;
+    background: #fff;
+    border-radius: 5px;
+    float: left;
+}
+
+.My-collect>div {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.My-collect li {
+    width: 250px;
+    height: 184px;
+    float: left;
+    margin-top: 10px;
+}
+
+.My-collect img {
+    width: 184px;
+    height: 184px;
+    margin: 0px 33px 0px 33px;
+}
+
+.My-collect li>p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 350;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.My-collect li>span {
+    color: #A52A2A;
+    font-size: 18px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.My-collect li>span::before {
+    content: "￥";
+    color: #A52A2A;
+}

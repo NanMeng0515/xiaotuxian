@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="小兔鲜儿官网，致力于打造全球最大的食品、生鲜电商购物平台">
+    <meta name="keywords" content="小兔鲜儿,食品,生鲜,服装,家电,电商,购物">
+    <title>小兔鲜儿-新鲜、惠民、快捷！</title>
+    <link rel="shortcut icon" href="favicon.ico" type="imge/x-icom">
+    <link rel="stylesheet" href="./css/dase.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <style>
+        .backgro {
+            height: 120px;
+            background: #fff;
+            padding-top: 20px;
+            padding-left: 40px;
+        }
+        
+        .Login {
+            width: 100%;
+            height: 500px;
+            background: url(./uploads/login-bg.696efec3.png) no-repeat;
+            background-size: cover;
+            background-position: -300px 0px;
+        }
+        
+        .header p {
+            float: right;
+            margin-top: 50px;
+            margin-right: 100px;
+        }
+        
+        .header span {
+            width: 30px;
+            height: 30px;
+            display: list-item;
+            list-style: none;
+            float: right;
+            margin-top: -5px;
+            background: url(./uploads/微信截图_20220405190328.png);
+        }
+        
+        .footer {
+            height: 120px;
+            background-color: #333;
+        }
+    </style>
+    <script>
+        $(function() {
+            $(".window-header h3").eq(0).click(function() {
+                $(".window-body").stop().fadeTo(0, 1);
+                $(".QR").stop().css('display', 'none')
+            })
+            $(".window-header h3").eq(1).click(function() {
+                $(".QR").stop().fadeTo(0, 1);
+                $(".window-body").stop().css('display', 'none')
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="backgro">
+        <div class="header wrapper">
+            <div class="logo">
+                <h1><a href="#">小兔鲜儿</a></h1>
+            </div>
+            <p><a href="./index.html">进入网站首页<span></span></a></p>
+        </div>
+    </div>
+    <div class="Login">
+        <div class="window">
+            <div class="window-header">
+                <a href="#">
+                    <h3>账户登录</h3>
+                </a>
+                <a href="#">
+                    <h3>二维码登录</h3>
+                </a>
+
+            </div>
+            <a href="#">
+                <p>手机验证码登录</p>
+            </a>
+            <div class="window-body">
+                <form action="">
+                    <div class="table">
+                        <span class="icon"><img src="./img/用户-角色-用户名-单人_jurassic.png" alt=""
+                                id="icon-img1"></span><input type="text" name="username" class="icon-input" placeholder="请输入用户名">
+                    </div>
+                    <div class="table">
+                        <span class="icon"><img src="./img/密码.png" alt=""></span><input type="password" name="password" class="icon-input" placeholder="请输入密码">
+                    </div>
+                    <div class="">
+                        <input type="checkbox">我已同意<a href="#"><span>《隐私条款》</span></a>和<a href="#"><span>《服务条款》</span></a>
+                    </div>
+                    <div class="table">
+                        <input type="submit" class="icon-input" value="登录">
+                    </div>
+                </form>
+                <a href="" class="service"><span>免费注册</span></a><a href="" class="service"><span>找回密码</span></a>
+            </div>
+            <div class="QR">
+                <img src="./uploads/微信图片_20220328221631.jpg" alt="">
+                <span>请使用小兔鲜儿APP扫码登录</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="wrapper">
+            <div class="bottom">
+                <p>
+                    <a href="#">关于我们</a> |
+                    <a href="#">帮助中心</a> |
+                    <a href="#">售后服务</a> |
+                    <a href="#">配送与验收</a> |
+                    <a href="#">商务合作</a> |
+                    <a href="#">搜索推荐</a> |
+                    <a href="#">友情链接</a>
+                </p>
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

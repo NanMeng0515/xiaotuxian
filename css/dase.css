@@ -1,0 +1,108 @@
+/* æ¸…é™¤é»˜è®¤æ ·å¼çš„ä»£ç  */
+
+
+/* åŽ»é™¤å¸¸è§æ ‡ç­¾é»˜è®¤çš„ margin å’Œ padding */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* å…§å‡æ¨¡å¼ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* è®¾ç½®ç½‘é¡µç»Ÿä¸€çš„å­—ä½“å¤§å°ã€è¡Œé«˜ã€å­—ä½“ç³»åˆ—ç›¸å…³å±žæ€§ */
+
+body {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+    background: #f5f5f5;
+}
+
+
+/* åŽ»é™¤åˆ—è¡¨é»˜è®¤æ ·å¼ */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* åŽ»é™¤é»˜è®¤çš„å€¾æ–œæ•ˆæžœ */
+
+em,
+i {
+    font-style: normal;
+}
+
+
+/* åŽ»é™¤aæ ‡ç­¾é»˜è®¤ä¸‹åˆ’çº¿ï¼Œå¹¶è®¾ç½®é»˜è®¤æ–‡å­—é¢œè‰² */
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* è®¾ç½®imgçš„åž‚ç›´å¯¹é½æ–¹å¼ä¸ºå±…ä¸­å¯¹é½ï¼ŒåŽ»é™¤imgé»˜è®¤ä¸‹é—´éš™ */
+
+img {
+    vertical-align: middle;
+}
+
+
+/* åŽ»é™¤inputé»˜è®¤æ ·å¼ */
+
+input {
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* å·¦æµ®åŠ¨ */
+
+.fl {
+    float: left;
+}
+
+
+/* å³æµ®åŠ¨ */
+
+.fr {
+    float: right;
+}
+
+
+/* åŒä¼ªå…ƒç´ æ¸…é™¤æ³• */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
